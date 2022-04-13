@@ -1,52 +1,49 @@
-<div class="slider_section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="full">
-                    <div id="main_slider" class="carousel vert slide" data-ride="carousel" data-interval="5000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="slider_cont">
-                                            <h3>Discover Restaurants<br>That deliver near You</h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                            <a class="main_bt_border" href="#">Order Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="slider_image full text_align_center">
-                                            <img class="img-responsive" src="images/burger_slide.png" alt="#" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="slider_cont">
-                                            <h3>Discover Restaurants<br>That deliver near You</h3>
-                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                            <a class="main_bt_border" href="#">Order Now</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 full text_align_center">
-                                        <div class="slider_image">
-                                            <img class="img-responsive" src="images/burger_slide.png" alt="#" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                            <i class="fa fa-angle-up"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                            <i class="fa fa-angle-down"></i>
-                        </a>
+<!-- Start slides -->
+<div id="slides" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="images/slider-01.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view  <br>
+                            trends to see any changes in performance over time.</p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
                     </div>
                 </div>
             </div>
-        </div>
+        </li>
+        <li class="text-center">
+            <img src="images/slider-02.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view  <br>
+                            trends to see any changes in performance over time.</p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="images/slider-03.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <p class="m-b-40">See how your users experience your website in realtime or view  <br>
+                            trends to see any changes in performance over time.</p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
     </div>
 </div>
+<!-- End slides -->

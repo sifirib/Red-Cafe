@@ -1,70 +1,69 @@
-<!-- footer -->
-<fooetr>
-    <div class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-
-                    <form class="main_form">
-                        <div class="row">
-
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="form-control" placeholder="Name" type="text" name="Name">
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="form-control" placeholder="Email" type="text" name="Email">
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <button class="send">Send</button>
-                            </div>
-                        </div>
+<!-- Start Footer -->
+<footer class="footer-area bg-f">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <h3>About Us</h3>
+                <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Opening hours</h3>
+                <p><span class="text-color">Monday: </span>Closed</p>
+                <p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+                <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+                <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Contact information</h3>
+                <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+                <p class="lead"><a href="#">+01 2000 800 9999</a></p>
+                <p><a href="#"> info@admin.com</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Subscribe</h3>
+                <div class="subscribe_form">
+                    <form class="subscribe_form">
+                        <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                        <button type="submit" class="submit">SUBSCRIBE</button>
+                        <div class="clearfix"></div>
                     </form>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <div class="img-box">
-                        <figure><img src="images/img.jpg" alt="img" /></figure>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer_logo">
-                        <a href="index.html"><img src="images/logo1.jpg" alt="logo" /></a>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <ul class="lik">
-                        <li class="active"> <a href="index.html">Home</a></li>
-                        <li> <a href="about.html">About</a></li>
-                        <li> <a href="recipe.html">Recipe</a></li>
-                        <li> <a href="blog.html">Blog</a></li>
-                        <li> <a href="contact.html">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-12">
-                    <div class="new">
-                        <h3>Newsletter</h3>
-                        <form class="newtetter">
-                            <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                            <button class="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+                <ul class="list-inline f-social">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>
-</fooetr>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Yamifood Restaurant</a> Design By :
+                        <a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- End Footer -->
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<!-- ALL JS FILES -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
