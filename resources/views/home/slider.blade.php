@@ -2,7 +2,7 @@
 <div id="slides" class="cover-slides">
     <ul class="slides-container">
         <li class="text-center">
-            <img src="images/slider-01.jpg" alt="">
+            <img src="{{asset('assests')}}/images/slider-01.jpg" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -15,7 +15,7 @@
             </div>
         </li>
         <li class="text-center">
-            <img src="images/slider-02.jpg" alt="">
+            <img src="{{asset('assests')}}/images/slider-02.jpg" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -28,7 +28,7 @@
             </div>
         </li>
         <li class="text-center">
-            <img src="images/slider-03.jpg" alt="">
+            <img src="{{asset('assests')}}/images/slider-03.jpg" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
