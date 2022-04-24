@@ -1,28 +1,21 @@
-<!-- @TOC -->
-<!-- =================================================== -->
-<!--
-  + @Page Loader
-  + @App Content
-      - #Left Sidebar
-          > $Sidebar Header
-          > $Sidebar Menu
+<nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">COMPANY NAME</a>
+    </div>
 
-      - #Main
-          > $Topbar
-          > $App Screen Content
--->
+    <div class="header-right">
 
-<!-- @Page Loader -->
-<!-- =================================================== -->
-<div id='loader'>
-    <div class="spinner"></div>
-</div>
+        <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+        <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
+        <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
 
-<script>
-    window.addEventListener('load', function load() {
-        const loader = document.getElementById('loader');
-        setTimeout(function() {
-            loader.classList.add('fadeOut');
-        }, 300);
-    });
-</script>
+
+    </div>
+</nav>
+<!-- /. NAV TOP  -->

@@ -1,202 +1,134 @@
-<!-- @App Content -->
-<!-- =================================================== -->
-<div>
-    <!-- #Left Sidebar ==================== -->
-    <div class="sidebar">
-        <div class="sidebar-inner">
-            <!-- ### $Sidebar Header ### -->
-            <div class="sidebar-logo">
-                <div class="peers ai-c fxw-nw">
-                    <div class="peer peer-greed">
-                        <a class="sidebar-link td-n" href="index.html">
-                            <div class="peers ai-c fxw-nw">
-                                <div class="peer">
-                                    <div class="logo">
-                                        <img src="assets/static/images/logo.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="peer peer-greed">
-                                    <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="peer">
-                        <div class="mobile-toggle sidebar-toggle">
-                            <a href="" class="td-n">
-                                <i class="ti-arrow-circle-left"></i>
-                            </a>
-                        </div>
+<nav class="navbar-default navbar-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu">
+            <li>
+                <div class="user-img-div">
+                    <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail" />
+
+                    <div class="inner-text">
+                        Jhon Deo Alex
+                        <br />
+                        <small>Last Login : 2 Weeks Ago </small>
                     </div>
                 </div>
-            </div>
 
-            <!-- ### $Sidebar Menu ### -->
-            <ul class="sidebar-menu scrollable pos-r">
-                <li class="nav-item mT-30 actived">
-                    <a class="sidebar-link" href="index.html">
-                <span class="icon-holder">
-                  <i class="c-blue-500 ti-home"></i>
-                </span>
-                        <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="email.html">
-                <span class="icon-holder">
-                  <i class="c-brown-500 ti-email"></i>
-                </span>
-                        <span class="title">Email</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="compose.html">
-                <span class="icon-holder">
-                  <i class="c-blue-500 ti-share"></i>
-                </span>
-                        <span class="title">Compose</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="calendar.html">
-                <span class="icon-holder">
-                  <i class="c-deep-orange-500 ti-calendar"></i>
-                </span>
-                        <span class="title">Calendar</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="chat.html">
-                <span class="icon-holder">
-                  <i class="c-deep-purple-500 ti-comment-alt"></i>
-                </span>
-                        <span class="title">Chat</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="charts.html">
-                <span class="icon-holder">
-                  <i class="c-indigo-500 ti-bar-chart"></i>
-                </span>
-                        <span class="title">Charts</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class='sidebar-link' href="forms.html">
-                <span class="icon-holder">
-                  <i class="c-light-blue-500 ti-pencil"></i>
-                </span>
-                        <span class="title">Forms</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="sidebar-link" href="ui.html">
-                <span class="icon-holder">
-                    <i class="c-pink-500 ti-palette"></i>
-                  </span>
-                        <span class="title">UI Elements</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-orange-500 ti-layout-list-thumb"></i>
-                </span>
-                        <span class="title">Tables</span>
-                        <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class='sidebar-link' href="basic-table.html">Basic Table</a>
-                        </li>
-                        <li>
-                            <a class='sidebar-link' href="datatable.html">Data Table</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                    <i class="c-purple-500 ti-map"></i>
-                  </span>
-                        <span class="title">Maps</span>
-                        <span class="arrow">
-                    <i class="ti-angle-right"></i>
-                  </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="google-maps.html">Google Map</a>
-                        </li>
-                        <li>
-                            <a href="vector-maps.html">Vector Map</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                    <i class="c-red-500 ti-files"></i>
-                  </span>
-                        <span class="title">Pages</span>
-                        <span class="arrow">
-                    <i class="ti-angle-right"></i>
-                  </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class='sidebar-link' href="blank.html">Blank</a>
-                        </li>
-                        <li>
-                            <a class='sidebar-link' href="404.html">404</a>
-                        </li>
-                        <li>
-                            <a class='sidebar-link' href="500.html">500</a>
-                        </li>
-                        <li>
-                            <a class='sidebar-link' href="signin.html">Sign In</a>
-                        </li>
-                        <li>
-                            <a class='sidebar-link' href="signup.html">Sign Up</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-teal-500 ti-view-list-alt"></i>
-                </span>
-                        <span class="title">Multiple Levels</span>
-                        <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item dropdown">
-                            <a href="javascript:void(0);">
-                                <span>Menu Item</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="javascript:void(0);">
-                                <span>Menu Item</span>
-                                <span class="arrow">
-                      <i class="ti-angle-right"></i>
-                    </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="javascript:void(0);">Menu Item</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Menu Item</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            </li>
+
+
+            <li>
+                <a  href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="panel-tabs.html"><i class="fa fa-toggle-on"></i>Tabs & Panels</a>
+                    </li>
+                    <li>
+                        <a href="notification.html"><i class="fa fa-bell "></i>Notifications</a>
+                    </li>
+                    <li>
+                        <a href="progress.html"><i class="fa fa-circle-o "></i>Progressbars</a>
+                    </li>
+                    <li>
+                        <a href="buttons.html"><i class="fa fa-code "></i>Buttons</a>
+                    </li>
+                    <li>
+                        <a href="icons.html"><i class="fa fa-bug "></i>Icons</a>
+                    </li>
+                    <li>
+                        <a href="wizard.html"><i class="fa fa-bug "></i>Wizard</a>
+                    </li>
+                    <li>
+                        <a href="typography.html"><i class="fa fa-edit "></i>Typography</a>
+                    </li>
+                    <li>
+                        <a href="grid.html"><i class="fa fa-eyedropper "></i>Grid</a>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-yelp "></i>Extra Pages <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="invoice.html"><i class="fa fa-coffee"></i>Invoice</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html"><i class="fa fa-flash "></i>Pricing</a>
+                    </li>
+                    <li>
+                        <a href="component.html"><i class="fa fa-key "></i>Components</a>
+                    </li>
+                    <li>
+                        <a href="social.html"><i class="fa fa-send "></i>Social</a>
+                    </li>
+
+                    <li>
+                        <a href="message-task.html"><i class="fa fa-recycle "></i>Messages & Tasks</a>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="table.html"><i class="fa fa-flash "></i>Data Tables </a>
+
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+
+                    <li>
+                        <a href="form.html"><i class="fa fa-desktop "></i>Basic </a>
+                    </li>
+                    <li>
+                        <a href="form-advance.html"><i class="fa fa-code "></i>Advance</a>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="gallery.html"><i class="fa fa-anchor "></i>Gallery</a>
+            </li>
+            <li>
+                <a href="error.html"><i class="fa fa-bug "></i>Error Page</a>
+            </li>
+            <li>
+                <a href="login.html"><i class="fa fa-sign-in "></i>Login Page</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-sitemap "></i>Multilevel Link <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#"><i class="fa fa-bicycle "></i>Second Level Link</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-flask "></i>Second Level Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#"><i class="fa fa-plus "></i>Third Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-comments-o "></i>Third Level Link</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="active-menu" href="blank.html"><i class="fa fa-square-o "></i>Blank Page</a>
+            </li>
+        </ul>
     </div>
+
+</nav>
+<!-- /. NAV SIDE  -->

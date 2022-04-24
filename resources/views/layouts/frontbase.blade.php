@@ -14,17 +14,17 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="{{asset('assests')}}/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{asset('assests')}}/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{{asset('assets')}}/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{asset('assets')}}/images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{asset('assests')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="{{asset('assests')}}/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="{{asset('assests')}}/css/responsive.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{asset('assests')}}/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/custom.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
