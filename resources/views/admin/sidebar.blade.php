@@ -16,117 +16,57 @@
 
 
             <li>
-                <a  href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>
+
+                <a  href="index.html"><i class="fa fa-dashboard "></i>Dashboard <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="panel-tabs.html"><i class="fa fa-toggle-on"></i>Tabs & Panels</a>
+                        <a href="index1.html"><i class="fa fa-circle-o "></i>New Orders</a>
                     </li>
                     <li>
-                        <a href="notification.html"><i class="fa fa-bell "></i>Notifications</a>
+                        <a href="index2.html"><i class="fa fa-circle-o "></i>Accepted Orders</a>
                     </li>
                     <li>
-                        <a href="progress.html"><i class="fa fa-circle-o "></i>Progressbars</a>
+                        <a href="index3.html"><i class="fa fa-circle-o "></i>Shipping Orders</a>
                     </li>
                     <li>
-                        <a href="buttons.html"><i class="fa fa-code "></i>Buttons</a>
-                    </li>
-                    <li>
-                        <a href="icons.html"><i class="fa fa-bug "></i>Icons</a>
-                    </li>
-                    <li>
-                        <a href="wizard.html"><i class="fa fa-bug "></i>Wizard</a>
-                    </li>
-                    <li>
-                        <a href="typography.html"><i class="fa fa-edit "></i>Typography</a>
-                    </li>
-                    <li>
-                        <a href="grid.html"><i class="fa fa-eyedropper "></i>Grid</a>
+                        <a href="index4.html"><i class="fa fa-circle-o "></i>Completed Orders</a>
                     </li>
 
-
-                </ul>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-yelp "></i>Extra Pages <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="invoice.html"><i class="fa fa-coffee"></i>Invoice</a>
-                    </li>
-                    <li>
-                        <a href="pricing.html"><i class="fa fa-flash "></i>Pricing</a>
-                    </li>
-                    <li>
-                        <a href="component.html"><i class="fa fa-key "></i>Components</a>
-                    </li>
-                    <li>
-                        <a href="social.html"><i class="fa fa-send "></i>Social</a>
-                    </li>
-
-                    <li>
-                        <a href="message-task.html"><i class="fa fa-recycle "></i>Messages & Tasks</a>
-                    </li>
-
-
-                </ul>
-            </li>
-            <li>
-                <a href="table.html"><i class="fa fa-flash "></i>Data Tables </a>
-
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-
-                    <li>
-                        <a href="form.html"><i class="fa fa-desktop "></i>Basic </a>
-                    </li>
-                    <li>
-                        <a href="form-advance.html"><i class="fa fa-code "></i>Advance</a>
-                    </li>
-
-
-                </ul>
-            </li>
-            <li>
-                <a href="gallery.html"><i class="fa fa-anchor "></i>Gallery</a>
-            </li>
-            <li>
-                <a href="error.html"><i class="fa fa-bug "></i>Error Page</a>
-            </li>
-            <li>
-                <a href="login.html"><i class="fa fa-sign-in "></i>Login Page</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-sitemap "></i>Multilevel Link <span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="#"><i class="fa fa-bicycle "></i>Second Level Link</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask "></i>Second Level Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                        <ul class="nav nav-third-level">
-                            <li>
-                                <a href="#"><i class="fa fa-plus "></i>Third Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-comments-o "></i>Third Level Link</a>
-                            </li>
-
-                        </ul>
-
-                    </li>
                 </ul>
             </li>
 
             <li>
-                <a class="active-menu" href="blank.html"><i class="fa fa-square-o "></i>Blank Page</a>
+                <a  href="/admin/category"><i class="fa fa-bars text-yellow-300"></i> Categories </a>
             </li>
+            <li>
+                <a  href="/admin/product"><i class="fa fa-list text-orange-300"></i> Products </a>
+            </li>
+            <li>
+                <a  href="/admin/comment"><i class="fa fa-comment text-blue-200"></i> Comments </a>
+            </li>
+            <li>
+                <a  href="/admin/faq"><i class="fa fa-question text-red-500"></i> FAQ </a>
+            </li>
+            <li>
+                <a  href="/admin/messages"><i class="fa fa-send text-orange-500"></i> Messages </a>
+            </li>
+            <li>
+                <a  href="/admin/user"><i class="fa fa-user text-green-300"></i> Users </a>
+            </li>
+            <li>
+                <a  href="/admin/social"><i class="fa fa-twitter text-blue-400"></i> Social </a>
+            </li>
+
+            <li class="nav-third-level">LABELS</li>
+            <li class="nav-item">
+                <a href="/admin/setting" class="nav-link">
+                    <i class="fa fa-bars text-purple-500"></i>
+                    <p class="text"> Settings</p>
+                </a>
+            </li>
+
+
+
         </ul>
     </div>
 

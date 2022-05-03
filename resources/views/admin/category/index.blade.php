@@ -7,8 +7,9 @@
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="page-head-line">Category List</h1>
                     <div class="col-md-12">
+                        <a href="/admin/category/create" class="btn btn-default btn-success btn-lg">Add Category</a>
+
                         <!--   Category List -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
