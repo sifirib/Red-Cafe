@@ -15,7 +15,7 @@
                                 ADD CATEGORY
                             </div>
                             <div class="panel-body">
-                                <form role="form" action="/admin/category/store" method="post">
+                                <form role="form" action="{{route('admin.category.store')}}" method="post">
                                     @csrf
                                     <div class="form-group">
                                         <label>Title</label>
