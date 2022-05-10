@@ -1,6 +1,6 @@
 @extends('layouts.adminbase')
 
-@section('title', 'Category List')
+@section('title', 'Product List')
 
 @section('content')
     <div id="page-wrapper">
@@ -8,12 +8,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-12">
-                        <a href="{{route('admin.category.create')}}" class="btn btn-default btn-success btn-lg">Add Category</a>
+                        <a href="{{route('admin.product.create')}}" class="btn btn-default btn-success btn-lg">Add Product</a>
 
-                        <!--   Category List -->
+                        <!--   Product List -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Categories
+                                Products
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -39,15 +39,11 @@
                                                 <td>{{$rs->title}}</td>
                                                 <td>{{$rs->keywords}}</td>
                                                 <td>{{$rs->description}}</td>
-                                                <td>
-                                                    @if ($rs->image)
-                                                    <img src="{{Storage::url($rs->image)}}" style="height: 60px">
-                                                    @endif
-                                                </td>
+                                                <td>{{$rs->image}}</td>
                                                 <td>{{$rs->status}}</td>
-                                                <td><a href="{{route('admin.category.edit', ['id'=>$rs->id])}}" class="btn btn-sm btn-primary">Edit</a></td>
-                                                <td><a href="{{route('admin.category.destroy', ['id'=>$rs->id])}}" class="btn btn-sm btn-danger">Delete</a></td>
-                                                <td><a href="{{route('admin.category.show', ['id'=>$rs->id])}}" class="btn btn-sm btn-info">Show</a></td>
+                                                <td><a href="{{route('admin.product.edit', ['id'=>$rs->id])}}" class="btn btn-sm btn-primary">Edit</a></td>
+                                                <td><a href="{{route('admin.product.destroy', ['id'=>$rs->id])}}" class="btn btn-sm btn-danger">Delete</a></td>
+                                                <td><a href="{{route('admin.product.show', ['id'=>$rs->id])}}" class="btn btn-sm btn-info">Show</a></td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -56,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End  Category List -->
+                        <!-- End  Product List -->
                     </div>
                 </div>
             </div>

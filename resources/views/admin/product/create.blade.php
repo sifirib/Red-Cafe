@@ -15,43 +15,70 @@
                                 ADD CATEGORY
                             </div>
                             <div class="panel-body">
-                                <form role="form" action="{{route('admin.category.store')}}" method="post" enctype="multipart/form-data">
+                                <form role="form" action="{{route('admin.category.store')}}" method="post">
                                     @csrf
                                     <div class="form-group">
                                         <label>Title</label>
                                         <input class="form-control" type="text" name="title">
-                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+{{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
                                     <div class="form-group">
                                         <label>Keywords</label>
                                         <input class="form-control" type="text" name="keywords">
-                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+{{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
                                     <div class="form-group">
                                         <label>Description</label>
                                         <input class="form-control" type="text" name="description">
-                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+{{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
 
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            Upload Image
+                                            File Uploads
                                         </div>
                                         <div class="panel-body">
+
                                             <div class="form-group">
-                                                <label class="control-label col-lg-4">Image</label>
+                                                <label class="control-label col-lg-4">No Input</label>
+                                                <div class="">
+                                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                        <span class="btn btn-file btn-default">
+                                                            <span class="fileupload-new">Select file</span>
+                                                            <span class="fileupload-exists">Change</span>
+                                                            <input type="file">
+                                                        </span>
+                                                        <span class="fileupload-preview"></span>
+                                                        <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-4">Image Upload</label>
                                                 <div class="">
                                                     <div class="fileupload fileupload-new" data-provides="fileupload">
                                                         <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
                                                         <div>
-                                                            <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists"> Change</span><input type="file" name="image"></span>
+                                                            <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file"></span>
                                                             <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            {{--                                            <div class="alert alert-warning"><strong>Notice!</strong> Image preview only works in IE10+, FF3.6+, Chrome6.0+ and Opera11.1+. In older browsers and Safari, the filename is shown instead.</div>--}}
+                                            <div class="form-group">
+                                                <label class="control-label col-lg-4">Pre Defined Image</label>
+                                                <div class="">
+                                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                        <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="{{asset("assets")}}/admin/img/demoUpload.jpg" alt=""></div>
+                                                        <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                                        <div>
+                                                            <span class="btn btn-file btn-primary"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file"></span>
+                                                            <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-warning"><strong>Notice!</strong> Image preview only works in IE10+, FF3.6+, Chrome6.0+ and Opera11.1+. In older browsers and Safari, the filename is shown instead.</div>
                                         </div>
                                     </div>
 
