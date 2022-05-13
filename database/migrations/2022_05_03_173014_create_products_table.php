@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-
             $table->foreignId('category_id')->nullable();
             $table->foreignId('user_id')->nullable();
             $table->string('title');
@@ -26,9 +25,9 @@ return new class extends Migration
             $table->float("price")->nullable();
             $table->integer("quantity")->nullable();
             $table->integer("minquantity")->nullable();
+            $table->integer("maxquantity")->nullable();
             $table->integer("tax")->nullable();
             $table->string("status", 6)->default('False');
-
             $table->timestamps();
         });
     }

@@ -7,28 +7,27 @@
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="page-head-line">Edit Category: {{$data->title}}</h1>
+                    <h1 class="page-head-line">Edit Product: {{$data->title}}</h1>
 
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="panel panel-info">
                             <div class="panel-heading">
-                                EDIT CATEGORY
+                                EDIT PRODUCT
                             </div>
                             <div class="panel-body">
-                                <form role="form" action="{{route('admin.category.update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                <form role="form" action="{{route('admin.product.update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                     @csrf
 
-                                    {{--                                    <div class="form-group">--}}
-                                    {{--                                        <label>Parent Category</label>--}}
-                                    {{--                                        <select class="form-control select2" name="parent_id" style="">--}}
-                                    {{--                                            <option value="0" selected="selected">Main Category</option>--}}
-                                    {{--                                            @foreach($datalist as $rs)--}}
-                                    {{--                                                <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>--}}
-                                    {{--                                                    {{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }}--}}
-                                    {{--                                                </option>--}}
-                                    {{--                                            @endforeach--}}
-                                    {{--                                        </select>--}}
-                                    {{--                                    </div>--}}
+                                    <div class="form-group">
+                                        <label>Parent Product</label>
+                                        <select class="form-control select2" name="category_id" style="">
+                                            @foreach($datalist as $rs)
+                                                <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>
+                                                    {{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
 
                                     <div class="form-group">
                                         <label>Title</label>
@@ -41,8 +40,33 @@
                                         {{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
                                     <div class="form-group">
-                                        <label>Description</label>
-                                        <input class="form-control" type="text" name="description" value="{{$data->description}}">
+                                        <label>Price</label>
+                                        <input class="form-control" type="number" name="price" value="{{$data->price}}">
+                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Quantity</label>
+                                        <input class="form-control" type="number" name="quantity" value="{{$data->quantity}}">
+                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Minimum Quantity</label>
+                                        <input class="form-control" type="number" name="minquantity" value="{{$data->minquantity}}">
+                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Maximum Quantity</label>
+                                        <input class="form-control" type="number" name="maxquantity" value="{{$data->maxquantity}}">
+                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tax %</label>
+                                        <input class="form-control" type="number" name="tax" value="{{$data->tax}}">
+                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Detail</label>
+                                        <textarea class="form-control" name="detail" placeholder="Tell some features of your product">{{$data->detail}}</textarea>
                                         {{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
 

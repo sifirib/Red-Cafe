@@ -20,7 +20,7 @@
                                     <table class="table">
                                         <thead>
                                         <tr>
-                                            <th>Id</th>
+                                            <th style="width: 10px">Id</th>
                                             <th>Parent</th>
                                             <th>Title</th>
                                             <th>Image</th>

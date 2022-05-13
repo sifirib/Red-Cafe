@@ -20,10 +20,11 @@
                                     <table class="table">
                                         <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th style="width: 10px">Id</th>
+                                            <th>Category</th>
                                             <th>Title</th>
-                                            <th>Keywords</th>
-                                            <th>Description</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
                                             <th>Image</th>
                                             <th>Status</th>
                                             <th style="width: 40px"></th>
@@ -36,13 +37,18 @@
                                         @foreach($data as $rs)
                                             <tr class="success">
                                                 <td>{{$rs->id}}</td>
+                                                <td>{{ \App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }}</td>
                                                 <td>{{$rs->title}}</td>
-                                                <td>{{$rs->keywords}}</td>
-                                                <td>{{$rs->description}}</td>
-                                                <td>{{$rs->image}}</td>
+                                                <td>{{$rs->price}}</td>
+                                                <td>{{$rs->quantity}}</td>
+                                                <td>
+                                                    @if ($rs->image)
+                                                        <img src="{{Storage::url($rs->image)}}" style="height: 60px">
+                                                    @endif
+                                                </td>
                                                 <td>{{$rs->status}}</td>
                                                 <td><a href="{{route('admin.product.edit', ['id'=>$rs->id])}}" class="btn btn-sm btn-primary">Edit</a></td>
-                                                <td><a href="{{route('admin.product.destroy', ['id'=>$rs->id])}}" class="btn btn-sm btn-danger">Delete</a></td>
+                                                <td><a href="{{route('admin.product.destroy', ['id'=>$rs->id])}}" onclick="return confirm('Deleting!! Are you sure?')" class="btn btn-sm btn-danger">Delete</a></td>
                                                 <td><a href="{{route('admin.product.show', ['id'=>$rs->id])}}" class="btn btn-sm btn-info">Show</a></td>
                                             </tr>
                                         @endforeach
