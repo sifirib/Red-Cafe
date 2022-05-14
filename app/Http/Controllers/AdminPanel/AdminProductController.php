@@ -57,6 +57,9 @@ class AdminProductController extends Controller
         $data->minquantity = $request->minquantity;
         $data->tax = $request->tax;
         $data->status = $request->status;
+        if ($request->file('image')) {
+            $data->image = $request->file('image')->store('images');
+        }
         $data->save();
 
         return redirect('admin/product');

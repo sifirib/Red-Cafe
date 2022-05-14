@@ -37,7 +37,7 @@
                                         @foreach($data as $rs)
                                             <tr class="success">
                                                 <td>{{$rs->id}}</td>
-                                                <td>{{ \App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }}</td>
+                                                <td>{{ \App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs->category, $rs->title) }}</td>
                                                 <td>{{$rs->title}}</td>
                                                 <td>{{$rs->price}}</td>
                                                 <td>{{$rs->quantity}}</td>

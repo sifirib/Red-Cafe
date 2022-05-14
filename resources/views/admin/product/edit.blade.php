@@ -75,20 +75,12 @@
                                             Upload Image
                                         </div>
                                         <div class="panel-body">
-
                                             <div class="form-group">
-                                                <label class="control-label col-lg-4">Image</label>
-                                                <div class="">
-                                                    <div class="fileupload fileupload-new" data-provides="fileupload">
-                                                        <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
-                                                        <div>
-                                                            <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists"> Change</span><input type="file" name="image"></span>
-                                                            <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                                        </div>
-                                                    </div>
+                                                <div>
+                                                    <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists"> Change</span><input type="file" name="image"></span>
+                                                    <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
 
