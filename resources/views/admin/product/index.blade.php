@@ -25,7 +25,8 @@
                                             <th>Title</th>
                                             <th>Price</th>
                                             <th>Quantity</th>
-                                            <th>Image</th>
+                                            <th>Images</th>
+                                            <th>Image Gallery</th>
                                             <th>Status</th>
                                             <th style="width: 40px"></th>
                                             <th style="width: 40px"></th>
@@ -45,6 +46,12 @@
                                                     @if ($rs->image)
                                                         <img src="{{Storage::url($rs->image)}}" style="height: 60px">
                                                     @endif
+                                                </td>
+                                                <td>
+                                                    <a href="{{route('admin.image.index', ['pid'=>$rs->id])}}"
+                                                        onclick="return !window.open(this.href, '', 'top=50 left=100 width=1100 height=700')">
+                                                        <img src="{{asset('assets')}}/admin/img/gallery.png" style="width: 50px">
+                                                    </a>
                                                 </td>
                                                 <td>{{$rs->status}}</td>
                                                 <td><a href="{{route('admin.product.edit', ['id'=>$rs->id])}}" class="btn btn-sm btn-primary">Edit</a></td>
