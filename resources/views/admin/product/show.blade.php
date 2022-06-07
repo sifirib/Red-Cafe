@@ -8,8 +8,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-head-line">{{$data->title}}</h1>
-                    <a href="{{route('admin.category.edit', ['id'=>$data->id])}}" class="btn btn-default bg-info" style="">Edit</a>
-                    <a href="{{route('admin.category.destroy', ['id'=>$data->id])}}" onclick="return confirm('Deleting!! Are you sure?')" class="btn btn-default bg-danger" style="">Delete</a>
+                    <a href="{{route('admin.product.edit', ['id'=>$data->id])}}" class="btn btn-default bg-info" style="">Edit</a>
+                    <a href="{{route('admin.product.destroy', ['id'=>$data->id])}}" onclick="return confirm('Deleting!! Are you sure?')" class="btn btn-default bg-danger" style="">Delete</a>
 
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="panel panel-default">
@@ -61,7 +61,7 @@
                                         </tr>
                                         <tr>
                                             <th>Detail</th>
-                                            <td>{{$data->detail}}</td>
+                                            <td>{!! $data->detail !!}</td>
                                         </tr>
                                         <tr>
                                             <th>Image</th>

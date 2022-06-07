@@ -2,6 +2,10 @@
 
 @section('title', 'Edit Category', $data->title)
 
+@section('head')
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+@endsection
+
 @section('content')
     <div id="page-wrapper">
         <div id="page-inner">
@@ -66,8 +70,18 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Detail</label>
-                                        <textarea class="form-control" name="detail" placeholder="Tell some features of your product">{{$data->detail}}</textarea>
-                                        {{--                                        <p class="help-block">Help text here.</p>--}}
+                                        <textarea class="form-control" name="detail" id="detail" placeholder="Tell some features of your product">{{$data->detail}}</textarea>
+
+                                        <script>
+                                            ClassicEditor
+                                                .create( document.querySelector( '#detail' ) )
+                                                .then( editor => {
+                                                    console.log( editor );
+                                                } )
+                                                .catch( error => {
+                                                    console.error( error );
+                                                } );
+                                        </script>
                                     </div>
 
                                     <div class="panel panel-default">

@@ -46,9 +46,7 @@
                         <th style="width: 10px">Id</th>
                         <th>Title</th>
                         <th>Image</th>
-                        <th style="width: 40px">Update</th>
                         <th style="width: 40px">Delete</th>
-
                     </tr>
                     </thead>
                     <tbody>
@@ -61,7 +59,6 @@
                                     <img src="{{Storage::url($rs->image)}}" style="height: 60px">
                                 @endif
                             </td>
-{{--                            <td><a href="{{route('admin.image.edit', ['pid'=>$product->id, 'id'=>$rs->id])}}" class="btn btn-sm btn-primary">Edit</a></td>--}}
                             <td><a href="{{route('admin.image.destroy', ['pid'=>$product->id, 'id'=>$rs->id])}}" onclick="return confirm('Deleting!! Are you sure?')" class="btn btn-sm btn-danger">Delete</a></td>
                         </tr>
                     @endforeach
