@@ -25,7 +25,7 @@
 
         <div class="row special-list">
             @php
-                $category_name = "";
+                $div_class_name = "";
             @endphp
 
             @foreach($productlist1 as $rs)

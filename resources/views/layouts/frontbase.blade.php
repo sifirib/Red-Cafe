@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,43 +39,37 @@
 
 @include('home.header')
 
-@section('slider')
-    @include('home.slider')
-@show
+{{--@section('slider')--}}
+{{--    @include('home.slider')--}}
+{{--@show--}}
 
 {{--@section('sidebar')--}}
 {{--    @include('home.sidebar')--}}
 {{--@show--}}
 
-@section('about')
-    @include('home.about')
-@show
+{{--@section('about')--}}
+{{--    @include('home.about')--}}
+{{--@show--}}
 
-@section('qt')
-    @include('home.qt')
-@show
+{{--@section('qt')--}}
+{{--    @include('home.qt')--}}
+{{--@show--}}
 
-@section('menu')
-    @include('home.menu')
-@show
+
+{{--    @section('menu')--}}
+{{--        @include('home.menu')--}}
+{{--    @show--}}
+
+{{--@section('contact')--}}
+{{--    @include('home.contact')--}}
+{{--@show--}}
 
 @yield('content')
 
-@section('gallery')
-    @include('home.gallery')
-@show
-
-@section('customer_reviews')
-    @include('home.customer_reviews')
-@show
 
 
-@section('contact')
-    @include('home.contact')
-@show
 
-
-<@include('home.footer')
+@include('home.footer')
 @yield('foot')
 </body>
 </html>
