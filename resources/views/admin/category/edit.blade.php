@@ -23,7 +23,7 @@
                                         <select class="form-control select2" name="parent_id" style="">
                                             <option value="0" selected="selected">Main Category</option>
                                             @foreach($datalist as $rs)
-                                                <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>
+                                                <option value="{{$rs->id}}" @if ($rs->id == $data->id) selected="selected" @endif>
                                                     {{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title) }}
                                                 </option>
                                             @endforeach

@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Keywords</label>
-                                        <input class="form-control" type="text" name="keywords">
+                                        <input class="form-control" type="text" name="keywords" maxlength="100">
                                         {{--                                        <p class="help-block">Help text here.</p>--}}
                                     </div>
                                     <div class="form-group">

@@ -16,114 +16,45 @@
                     <div class="button-group filter-button-group">
                         <button class="active" data-filter="*">All</button>
                         <button data-filter=".drinks">Drinks</button>
-                        <button data-filter=".lunch">Lunch</button>
-                        <button data-filter=".dinner">Dinner</button>
+                        <button data-filter=".lunch">Food</button>
+                        <button data-filter=".dinner">Desserts</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row special-list">
-            <div class="col-lg-4 col-md-6 special-grid drinks">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-01.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Drinks 1</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $7.79</h5>
+            @php
+                $category_name = "";
+            @endphp
+
+            @foreach($productlist1 as $rs)
+
+                    @php
+                        if ($rs->category->title == "Hot" || $rs->category->title == "Cold") {
+                            $div_class_name = "drinks";
+                        }
+                        elseif ($rs->category->title == "Meat") {
+                            $div_class_name = "lunch";
+                        }
+                        elseif ($rs->category->title == "Desserts") {
+                            $div_class_name = "dinner";
+                        }
+                    @endphp
+
+                <div class="col-lg-4 col-md-6 special-grid {{$div_class_name}}">
+                    <div class="gallery-single fix">
+                        <img src="{{Storage::url($rs->image)}}" class="img-fluid" alt="Image" style="width: 350px; height: 210px">
+                        <div class="why-text">
+                            <h4>{{$rs->title}}</h4>
+                            <p>{{$rs->keywords}}</p>
+                            <h5> {{$rs->price}}₺</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid drinks">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-02.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Drinks 2</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $9.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid drinks">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-03.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Drinks 3</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $10.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid lunch">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-04.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Lunch 1</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $15.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid lunch">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-05.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Lunch 2</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $18.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid lunch">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-06.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Lunch 3</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $20.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid dinner">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-07.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Dinner 1</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $25.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid dinner">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-08.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Dinner 2</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $22.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid dinner">
-                <div class="gallery-single fix">
-                    <img src="{{asset('assets')}}/images/img-09.jpg" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Dinner 3</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $24.79</h5>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
+
     </div>
 </div>
 <!-- End Menu -->
