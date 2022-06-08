@@ -55,7 +55,11 @@
 
                             @foreach ($images as $rs)
                                 @php $len_of_images += 1; @endphp
-                                <li><a data-target="#pic-{{$len_of_images}}" data-toggle="tab"><img src="{{Storage::url($rs->image)}}" style="height: 120px; width: 160px" /></a></li>
+                                <li>
+                                    <a data-target="#pic-{{$len_of_images}}" data-toggle="tab">
+                                        <img src="{{Storage::url($rs->image)}}" style="height: 120px; width: 160px" />
+                                    </a>
+                                </li>
                             @endforeach
 
                         </ul>
