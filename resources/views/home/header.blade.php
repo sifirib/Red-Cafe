@@ -8,9 +8,28 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            @php
+                $mainCategories = \App\Http\Controllers\HomeController::mainCategoryList();
+            @endphp
             <div class="collapse navbar-collapse" id="navbars-rs-food">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Categories</a>
+
+                            @foreach($mainCategories as $rs)
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">{{$rs->title}}</a>
+                                    @if(count($rs->children))
+                                        @include('home.categorytree', ['children' => $rs->children]);
+                                    @endif
+
+                                </li>
+                            @endforeach
+                        </div>
+                    </li>
+
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown">

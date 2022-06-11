@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -9,6 +10,13 @@ use function PHPUnit\Framework\returnArgument;
 
 class HomeController extends Controller
 {
+
+    public static function mainCategoryList() {
+
+        return Category::where('parent_id', '=', 0)->with('children')->get();
+
+    }
+
     public function index() {
 
         $sliderdata = Product::limit(4)->get();
@@ -30,6 +38,7 @@ class HomeController extends Controller
             'images' => $images
         ]);
     }
+
 
     public function test($id, $name) {
         return view('home.test', ['id'=>$id, 'name'=>$name]);

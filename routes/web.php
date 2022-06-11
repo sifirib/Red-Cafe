@@ -28,8 +28,11 @@ Route::redirect('/home','/');
 
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name');
 
+Route::post('/save', [HomeController::class, 'save'])->name('save');
+
 
 Route::get('/product/{id}', [HomeController::class, 'product'])->name('product');
+Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
 
 
 
