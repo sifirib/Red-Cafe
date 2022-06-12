@@ -10,9 +10,11 @@
 
     <!-- Site Metas -->
     <title>@yield("title")</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="@yield("keywords")">
+    <meta name="description" content="@yield("description")">
+    <meta name="author" content="Bayram OZCAN">
+    <link rel="icon" type="image/x-icon" href="@yield("icon")">
+
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="{{asset('assets')}}/images/favicon.ico" type="image/x-icon">

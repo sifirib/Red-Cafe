@@ -2,7 +2,7 @@
 
 @section('title', 'Edit Category', $data->title)
 
-@section('head')con
+@section('head')
     <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
 @endsection
 
