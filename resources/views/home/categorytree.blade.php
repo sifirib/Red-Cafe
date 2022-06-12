@@ -8,11 +8,7 @@
 
             <hr>
         @else
-            <li>
-                <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                    <a class="dropdown-item" href="{{route('categoryproducts', ['id' => $subcategory->id, 'slug' => $subcategory->title])}}">{{$subcategory->title}}</a>
-                </div>
-            </li>
+            <a class="dropdown-item" href="{{route('categoryproducts', ['id' => $subcategory->id, 'slug' => $subcategory->title])}}">{{$subcategory->title}}</a>
         @endif
 
 
