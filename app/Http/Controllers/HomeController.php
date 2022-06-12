@@ -39,6 +39,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function categoryproducts($id) {
+
+        $category = Category::find($id);
+        $products = DB::table('products')->where('category_id', $id)->get();
+
+        return view('home.categoryproducts', [
+            'category' => $category,
+            'products' => $products
+        ]);
+    }
 
     public function test($id, $name) {
         return view('home.test', ['id'=>$id, 'name'=>$name]);

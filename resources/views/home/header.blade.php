@@ -2,7 +2,7 @@
 <header class="top-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{route('home')}}">
                 <img src="{{asset('assets')}}/images/logo.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,16 +20,17 @@
                             @foreach($mainCategories as $rs)
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">{{$rs->title}}</a>
-                                    @if(count($rs->children))
-                                        @include('home.categorytree', ['children' => $rs->children]);
-                                    @endif
-
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                        @if(count($rs->children))
+                                            @include('home.categorytree', ['children' => $rs->children]);
+                                        @endif
+                                    </div>
                                 </li>
                             @endforeach
                         </div>
                     </li>
 
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="{{route('home')}}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown">
@@ -49,8 +50,32 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+
+                <a class="align-items-center btn-warning d-flex h5 m-0 nav-link px-2 px-lg-4 text-white headerv2-login" href="{{route('login')}}"> <span class=" d-lg-inline">LOGIN</span></a>
+                <div class="dropdown align-items-stretch btn-danger d-flex h5 m-0 px-2 px-lg-4 nav-link text-white">
+                    <button class="btn-link border-0 p-0" type="button" id="dd-sepet" aria-haspopup="true" aria-expanded="false">
+{{--                        <img src="{{asset('assets')}}/images/empty_basket.png" style="height: 30px; width: 30px" alt="">--}}
+                        <img class="d-none" src="{{asset('assets')}}/images/empty_basket.png" style="height: 30px; width: 30px"> <span class="d-none d-lg-inline">BASKET</span><span class="item-count font1"></span>
+
+                    </button>
+                    <div class="dropdown-menu font1 open-basket" aria-labelledby="dd-sepet">
+                        <div class="dropdown-item">
+                            <div class="row">
+                                Sepetinizde ürün bulunmamaktadır.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
         </div>
     </nav>
 </header>
 <!-- End header -->
+
+
+
+
+
+

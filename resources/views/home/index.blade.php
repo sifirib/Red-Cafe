@@ -2,6 +2,7 @@
 
 
 
+
 @section('title', 'Restaurant & Cafe')
 
 @section('content')
