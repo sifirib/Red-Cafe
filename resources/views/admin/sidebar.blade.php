@@ -3,12 +3,16 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail" />
+                    <img src="{{asset('assets')}}/admin/img/user.png" class="img-thumbnail" /><br>
+
 
                     <div class="inner-text">
-                        Jhon Deo Alex
+                        <a class="align-items-center" style="font-size: 22px; color: whitesmoke" href="/logoutuser"> <span class=" d-lg-inline">LOGOUT</span></a>
+                        @auth{{Auth::user()->name}}@endauth
                         <br />
-                        <small>Last Login : 2 Weeks Ago </small>
+                        <small>Last Login : 3 Mins Ago </small>
+                        <br>
+
                     </div>
                 </div>
 
@@ -17,7 +21,7 @@
 
             <li>
 
-                <a  href="index.html"><i class="fa fa-dashboard "></i>Dashboard <span class="fa arrow"></span></a>
+                <a  href="{{route('admin.index')}}"><i class="fa fa-dashboard "></i>Dashboard <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="index1.html"><i class="fa fa-circle-o "></i>New Orders</a>
