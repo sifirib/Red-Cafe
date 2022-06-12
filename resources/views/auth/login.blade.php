@@ -43,7 +43,7 @@
                     {{ __('Log in') }}
                 </x-jet-button>
                 <button class="ml-3">
-                    <a href="{{route('home')}}">Register</a>
+                    <a href="/registeruser">Register</a>
                 </button>
             </div>
         </form>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use function PHPUnit\Framework\returnArgument;
 
@@ -49,6 +50,25 @@ class HomeController extends Controller
             'products' => $products
         ]);
     }
+
+    public function logout(Request $request) {
+
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+    }
+
+
+
+
+
+
+
+
+
 
     public function test($id, $name) {
         return view('home.test', ['id'=>$id, 'name'=>$name]);

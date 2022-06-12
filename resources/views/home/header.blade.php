@@ -55,7 +55,8 @@
 
 
                 @auth
-                    <a class="align-items-center btn-warning d-flex h5 m-0 nav-link px-2 px-lg-4 text-white headerv2-login" href="{{route('login')}}"> <span class=" d-lg-inline">{{Auth::user()->name}}</span></a>
+                    <a class="align-items-center" style="border: #0d6aad; color: yellow; background: #2c4762; border-color: #2c4762" href="/"> <span class=" d-lg-inline">{{Auth::user()->name}}</span></a>
+                    <a class="align-items-center btn-warning d-flex h5 m-0 nav-link px-2 px-lg-4 text-white headerv2-login" href="/logoutuser"> <span class=" d-lg-inline">LOGOUT</span></a>
                     <div class="dropdown align-items-stretch btn-danger d-flex h5 m-0 px-2 px-lg-4 nav-link text-white">
                         <button class="btn-link border-0 p-0" type="button" id="dd-sepet" aria-haspopup="true" aria-expanded="false">
                             <img class="d-none" src="{{asset('assets')}}/images/empty_basket.png" style="height: 30px; width: 30px"> <span class="d-none d-lg-inline">BASKET</span><span class="item-count font1"></span>
@@ -72,7 +73,7 @@
                     </div>
 
                 @else
-                    <a class="align-items-center btn-warning d-flex h5 m-0 nav-link px-2 px-lg-4 text-white headerv2-login" href="{{route('login')}}"> <span class=" d-lg-inline">LOGIN</span></a>
+                    <a class="align-items-center btn-warning d-flex h5 m-0 nav-link px-2 px-lg-4 text-white headerv2-login" href="/loginuser"> <span class=" d-lg-inline">LOGIN</span></a>
                     <div class="dropdown align-items-stretch btn-danger d-flex h5 m-0 px-2 px-lg-4 nav-link text-white">
                         <button class="btn-link border-0 p-0" type="button" id="dd-sepet" aria-haspopup="true" aria-expanded="false">
                             <img class="d-none" src="{{asset('assets')}}/images/empty_basket.png" style="height: 30px; width: 30px"> <span class="d-none d-lg-inline">BASKET</span><span class="item-count font1"></span>

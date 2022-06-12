@@ -35,6 +35,7 @@ Route::get('/product/{id}', [HomeController::class, 'product'])->name('product')
 Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
 Route::view('/loginuser', 'home.login');
 Route::view('/registeruser', 'home.register');
+Route::get('/logoutuser', [HomeController::class, 'logout'])->name('logoutuser');
 
 
 
