@@ -23,7 +23,7 @@ class HomeController extends Controller
 
         $page = 'home';
         $sliderdata = Product::limit(4)->get();
-        $productlist1 = Product::limit(6)->get();
+        $productlist1 = Product::limit(9)->get();
         $setting = Setting::first();
 
 

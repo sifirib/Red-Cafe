@@ -31,10 +31,10 @@
             @foreach($productlist1 as $rs)
 
                     @php
-                        if ($rs->category->title == "Hot" || $rs->category->title == "Cold") {
+                        if ($rs->category->title == "Hot" || $rs->category->title == "Cold" || $rs->category->title == "Drinks") {
                             $div_class_name = "drinks";
                         }
-                        elseif ($rs->category->title == "Meat") {
+                        elseif ($rs->category->title == "Meat" || $rs->category->title == "Vegetarian Friendly") {
                             $div_class_name = "lunch";
                         }
                         elseif ($rs->category->title == "Desserts") {
@@ -43,14 +43,16 @@
                     @endphp
 
                 <div class="col-lg-4 col-md-6 special-grid {{$div_class_name}}">
-                    <div class="gallery-single fix">
-                        <img src="{{Storage::url($rs->image)}}" class="img-fluid" alt="Image" style="width: 350px; height: 210px">
-                        <div class="why-text">
-                            <h4>{{$rs->title}}</h4>
-                            <p>{{$rs->keywords}}</p>
-                            <h5> {{$rs->price}}₺</h5>
+                    <a href="{{route('product', ['id' => $rs->id])}}">
+                        <div class="gallery-single fix" >
+                            <img src="{{Storage::url($rs->image)}}" class="img-fluid" alt="Image" style="width: 350px; height: 210px">
+                            <div class="why-text">
+                                <h4>{{$rs->title}}</h4>
+                                <p>{{$rs->keywords}}</p>
+                                <h5> {{$rs->price}}₺</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
