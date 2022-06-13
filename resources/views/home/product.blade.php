@@ -81,8 +81,14 @@
                         <p class="vote"><strong>{{(2.5 * $data->price) % 100}}%</strong> of buyers enjoyed this product! <strong>({{2 * $data->price}} votes)</strong></p>
 
                         <div class="action">
-                            <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                            <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                            <form action="{{route('shopcart.store')}}" method="post">
+                                @csrf
+                                <button class="add-to-cart btn btn-default" type="submit">add to cart</button>
+                                <input class="input" name="quantity" type="number" value="1" min="1">
+                                <input class="input" name="id" type="hidden" value="{{$data->id}}">
+                                <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                            </form>
+
                         </div>
                     </div>
                 </div>

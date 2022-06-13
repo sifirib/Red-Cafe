@@ -14,4 +14,11 @@ class Product extends Model
 
         return $this->belongsTo(Category::class);
     }
+
+    public function shopcart() {
+
+        return $this->hasMany(ShopCart::class);
+    }
+
+
 }

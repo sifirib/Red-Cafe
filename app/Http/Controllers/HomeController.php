@@ -111,19 +111,6 @@ class HomeController extends Controller
         return redirect()->route('contact')->with('info', 'Your message has been sent, Thank You.');
     }
 
-    public function storecomment(Request $request) {
-        //dd($request);
-        $data = new Comment();
-        $data->user_id = Auth::id();
-        $data->product_id = $request->input('product_id');
-        $data->subject = $request->input('subject');
-        $data->review = $request->input('review');
-        $data->rate = $request->input('rate');
-        $data->ip = request()->ip();
-        $data->save();
-
-        return redirect()->route('product' ,['id'=>$request->input('product_id')])->with('info', 'Your comment has been sent, Thank You.');
-    }
 
 
 
