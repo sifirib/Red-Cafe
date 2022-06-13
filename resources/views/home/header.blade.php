@@ -14,41 +14,42 @@
             @endphp
             <div class="collapse navbar-collapse" id="navbars-rs-food">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Categories</a>
+{{--                    <li class="nav-item dropdown">--}}
+{{--                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Categories</a>--}}
 
-                            @foreach($mainCategories as $rs)
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">{{$rs->title}}</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                        @if(count($rs->children))
-                                            @include('home.categorytree', ['children' => $rs->children]);
-                                        @endif
-                                    </div>
-                                </li>
-                            @endforeach
-                        </div>
-                    </li>
+{{--                            @foreach($mainCategories as $rs)--}}
+{{--                                <li class="nav-item dropdown">--}}
+{{--                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">{{$rs->title}}</a>--}}
+{{--                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">--}}
+{{--                                        @if(count($rs->children))--}}
+{{--                                            @include('home.categorytree', ['children' => $rs->children]);--}}
+{{--                                        @endif--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                            @endforeach--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
 
             <li class="nav-item active"><a class="nav-link" href="{{route('home')}}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('menu')}}">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About Us</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                            <a class="dropdown-item" href="reservation.html">Reservation</a>
-                            <a class="dropdown-item" href="stuff.html">Stuff</a>
-                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="{{route('references')}}">References</a>
+                            <a class="dropdown-item" href="{{route('reservation')}}">Reservation</a>
+{{--                            <a class="dropdown-item" href="{{route('stuff')}}">Stuff</a>--}}
+{{--                            <a class="dropdown-item" href="{{route('gallery')}}">Gallery</a>--}}
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                            <a class="dropdown-item" href="blog.html">blog</a>
-                            <a class="dropdown-item" href="blog-details.html">blog Single</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+{{--                    <li class="nav-item dropdown">--}}
+{{--                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>--}}
+{{--                        <div class="dropdown-menu" aria-labelledby="dropdown-a">--}}
+{{--                            <a class="dropdown-item" href="blog.html">blog</a>--}}
+{{--                            <a class="dropdown-item" href="blog-details.html">blog Single</a>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+                    <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                 </ul>
 
 

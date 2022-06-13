@@ -1,4 +1,11 @@
+@extends('layouts.frontbase')
 
+@section('title', 'Menu' , $setting->title)
+@section('keywords', $setting->keywords)
+@section('description', $setting->description)
+@section('icon', Storage::url($setting->icon))
+
+@section('content')
 <!-- Start Menu -->
 <div class="menu-box">
     <div class="container">
@@ -8,6 +15,7 @@
                     <h2>Special Menu</h2>
                     <p>Browse and choose our foods and drinks for your taste and for extra information.</p>
                 </div>
+
             </div>
         </div>
         <div class="row">
@@ -60,3 +68,4 @@
     </div>
 </div>
 <!-- End Menu -->
+@endsection

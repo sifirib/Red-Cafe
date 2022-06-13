@@ -95,7 +95,6 @@
     <div style="height: 15vh"></div>
 
 
-    @include('home.contact')
 @endsection
 
 @section('foot')

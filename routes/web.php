@@ -37,6 +37,8 @@ Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categorypro
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/references', [HomeController::class, 'references'])->name('references');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/menu', [HomeController::class, 'menu'])->name('menu');
+Route::get('/reservation', [HomeController::class, 'reservation'])->name('reservation');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
 Route::view('/loginuser', 'home.login')->name('loginuser');

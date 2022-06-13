@@ -12,7 +12,7 @@
     <title>@yield("title")</title>
     <meta name="keywords" content="@yield("keywords")">
     <meta name="description" content="@yield("description")">
-    <meta name="author" content="Bayram OZCAN">
+    <meta name="author" content="Ahmet Husrev Ceker">
     <link rel="icon" type="image/x-icon" href="@yield("icon")">
 
 

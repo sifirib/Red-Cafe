@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <h3>About Us</h3>
-                <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+                <p>Best foods and drinks here!</p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Opening hours</h3>
@@ -15,9 +15,9 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Contact information</h3>
-                <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-                <p class="lead"><a href="#">+01 2000 800 9999</a></p>
-                <p><a href="#"> info@admin.com</a></p>
+                <p class="lead">Bayburt, Turkey</p>
+                <p class="lead"><a href="#">+239291293123</a></p>
+                <p><a href="#"> laravelrestaurantcafe@laravelcafe.com</a></p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Subscribe</h3>
@@ -29,11 +29,9 @@
                     </form>
                 </div>
                 <ul class="list-inline f-social">
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -43,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Yamifood Restaurant</a> Design By :
+                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Laravel Restaurant</a> Design By :
                         <a href="https://html.design/">html design</a></p>
                 </div>
             </div>
