@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminPanel\AdminProductController;
 use App\Http\Controllers\AdminPanel\AdminUserController;
+use App\Http\Controllers\AdminPanel\MessageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
 use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryController;
@@ -100,13 +101,7 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
         Route::get('/destroy/{id}','destroy')->name('destroy');
         Route::get('/show/{id}','show')->name('show');
     });
-    // *************************** ADMIN COMMENT ROUTES ************************* \\
-    Route::prefix('comment')->name('comment.')->controller(CommentController::class)->group(function () {
-        Route::get('/','index')->name('index');
-        Route::post('/update/{id}','update')->name('update');
-        Route::get('/destroy/{id}','destroy')->name('destroy');
-        Route::get('/show/{id}','show')->name('show');
-    });
+
     // *************************** ADMIN USER ROUTES ************************* \\
     Route::prefix('user')->name('user.')->controller(AdminUserController::class)->group(function () {
         Route::get('/','index')->name('index');

@@ -1,7 +1,7 @@
 
 @extends('layouts.frontbase')
 
-@section('title', 'Game Edit' )
+@section('title', 'User Edit' )
 @section('head')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 @endsection
@@ -33,13 +33,13 @@
                                 @include('home.user.usermenu')
                             </div>
                             <div class="col-lg-7">
-                                <strong>Game Edit</strong>
+                                <strong>User Edit</strong>
                                 <div class="panel-body">
-                                    <form role="form" action="{{route('userpanel.gameupdate',['id'=>$data -> id])}}" method="post" enctype="multipart/form-data">
+                                    <form role="form" action="{{route('userpanel.productupdate',['id'=>$data -> id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         @method('PUT')
                                         <div class="form-group">
-                                            <label>Parent Game</label>
+                                            <label>Parent Category</label>
 
                                             <select class="form-control select2" name="category_id">
                                                 @foreach($datalist as $rs)

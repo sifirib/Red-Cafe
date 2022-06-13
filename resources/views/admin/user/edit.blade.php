@@ -1,6 +1,6 @@
 @extends('layouts.adminbase')
 
-@section('title', 'Edit Game: {{$data->title}}')
+@section('title', 'Edit Product: {{$data->title}}')
 @section('head')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 @endsection
@@ -9,14 +9,14 @@
     <div id="page-wrapper">
         <div class="panel panel-info">
             <div class="panel-heading">
-                Edit Game: {{$data->title}}
+                Edit Product: {{$data->title}}
             </div>
             <div class="panel-body">
-                <form role="form" action="{{route('admin.game.update',['id'=>$data -> id])}}" method="post" enctype="multipart/form-data">
+                <form role="form" action="{{route('admin.product.update',['id'=>$data -> id])}}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="form-group">
-                        <label>Parent Game</label>
+                        <label>Parent Category</label>
 
                         <select class="form-control select2" name="category_id">
                             @foreach($datalist as $rs)

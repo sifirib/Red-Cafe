@@ -32,8 +32,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>{{Session::get('info')}}</h1>
-                    <form id="contactForm" class="form-wrapper" action="{{route("storemessage")}}" method="post">
+                    @include('home.messages')
+                    <form id="contact-form" class="form-wrapper" class="clearfix" action="{{route("storemessage")}}" method="post">
                         @csrf
                         <div class="row">
                             <div class="col-md-12">
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="email" placeholder="Subject" id="subject_" class="form-control" name="subject_" required data-error="Please enter subject">
+                                    <input type="text" placeholder="Subject" id="subject" class="form-control" name="subject" required data-error="Please enter subject">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -67,9 +67,10 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="submit-button text-center">
-                                    <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                                    <button class="input" id="submit" type="submit">Send Message</button>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="clearfix"></div>
+
                                 </div>
                             </div>
                         </div>

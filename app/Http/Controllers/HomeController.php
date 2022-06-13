@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Message;
 use App\Models\Product;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -114,7 +115,7 @@ class HomeController extends Controller
         //dd($request);
         $data = new Comment();
         $data->user_id = Auth::id();
-        $data->game_id = $request->input('product_id');
+        $data->product_id = $request->input('product_id');
         $data->subject = $request->input('subject');
         $data->review = $request->input('review');
         $data->rate = $request->input('rate');
