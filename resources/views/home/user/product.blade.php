@@ -1,22 +1,19 @@
 
 @extends('layouts.frontbase')
 
-@section('title', 'My Games' )
+@section('title', 'My Products' )
 
 
 @section('content')
+    <div style="height: 20vh"></div>
+
     <div class="page-title lb single-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <h2><i class="fa fa-envelope-open-o bg-orange"></i> USER <small class="hidden-xs-down hidden-sm-down">Nulla felis eros, varius sit amet volutpat non. </small></h2>
+                    <h2><i class="fa fa-envelope-open-o bg-orange"></i> USER <small class="hidden-xs-down hidden-sm-down"></small></h2>
                 </div><!-- end col -->
-                <div class="col-lg-4 col-md-4 col-sm-12 hidden-xs-down hidden-sm-down">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                        <li class="breadcrumb-item active">User Games</li>
-                    </ol>
-                </div><!-- end col -->
+                <!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end page-title -->
@@ -32,7 +29,7 @@
                                 @include('home.user.usermenu')
                             </div>
                             <div class="col-lg-7">
-                                <strong>MY Games</strong>
+                                <strong>MY Products</strong>
                                 <div class="panel-body">
                                     <div class="table-responsive table-bordered">
                                         <table class="table">
@@ -54,7 +51,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach($game as $rs)
+                                            @foreach($product as $rs)
                                                 <tr>
                                                     <td>{{$rs -> id}}</td>
                                                     <td>{{App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs->category,$rs->category->title)}}</td>
@@ -77,8 +74,8 @@
 
                                                     <td>{{$rs -> status}}</td>
 
-{                                                    <td><a href="{{route('userpanel.gameedit',['id'=>$rs -> id])}}"class="btn btn-info">Edit</a></td>
-                                                   <td><a onclick="return confirm('Are you sure?')" href="{{route('userpanel.gamedestroy',['id'=>$rs -> id])}}"class="btn btn-danger">Delete</a>
+{                                                    <td><a href="{{route('userpanel.productedit',['id'=>$rs -> id])}}"class="btn btn-info">Edit</a></td>
+                                                   <td><a onclick="return confirm('Are you sure?')" href="{{route('userpanel.productdestroy',['id'=>$rs -> id])}}"class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
@@ -93,4 +90,6 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </section>
+    <div style="height: 20vh"></div>
+
 @endsection

@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 @endsection
 @section('content')
+
     <div class="page-title lb single-wrapper">
         <div class="container">
             <div class="row">
