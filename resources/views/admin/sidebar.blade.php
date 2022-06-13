@@ -8,7 +8,7 @@
 
                     <div class="inner-text">
                         <a class="align-items-center" style="font-size: 22px; color: whitesmoke" href="/logoutuser"> <span class=" d-lg-inline">LOGOUT</span></a>
-                        @auth{{Auth::user()->name}}@endauth
+                        {{Auth::user()->name}}
                         <br />
                         <small>Last Login : 3 Mins Ago </small>
                         <br>

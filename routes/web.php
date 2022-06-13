@@ -34,10 +34,15 @@ Route::post('/save', [HomeController::class, 'save'])->name('save');
 
 Route::get('/product/{id}', [HomeController::class, 'product'])->name('product');
 Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
-Route::view('/loginuser', 'home.login');
-Route::view('/registeruser', 'home.register');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/references', [HomeController::class, 'references'])->name('references');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
+Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
+Route::view('/loginuser', 'home.login')->name('loginuser');
+Route::view('/registeruser', 'home.register')->name('registeruser');
 Route::get('/logoutuser', [HomeController::class, 'logout'])->name('logoutuser');
-Route::view('/loginadmin', 'admin.login');
+Route::view('/loginadmin', 'admin.login')->name('loginadmin');
 Route::post('/loginadmincheck', [HomeController::class, 'loginadmincheck'])->name('loginadmincheck');
 
 
@@ -48,7 +53,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 // ******************* ADMIN PANEL ROUTES *******************
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
 
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');
 
