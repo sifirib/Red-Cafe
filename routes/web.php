@@ -53,7 +53,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 // ******************* ADMIN PANEL ROUTES *******************
-Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
 
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');
 
