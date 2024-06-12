@@ -10,4 +10,4 @@
 CHANGELOG.md export-ignore
 
 * linguist-vendored
-*.js linguist-vendored=false
+*.php linguist-vendored=false
